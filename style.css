@@ -1,0 +1,74 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.container{
+  width:100%;
+  max-width:400px;
+}
+
+.card{
+  padding:30px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(15px);
+  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+  text-align:center;
+  color:white;
+}
+
+h1{
+  margin-bottom:20px;
+}
+
+.search{
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.search input{
+  flex:1;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  outline:none;
+}
+
+.search button{
+  padding:10px 15px;
+  border:none;
+  border-radius:10px;
+  background:#00f2fe;
+  color:black;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.search button:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 15px #00f2fe;
+}
+
+.weather h2{
+  font-size:3rem;
+}
+
+.weather p{
+  opacity:0.8;
+}
+
+@media(max-width:500px){
+  .card{padding:20px;}
+}
